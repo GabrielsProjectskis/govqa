@@ -1,0 +1,342 @@
+[
+  {
+    "index": "w100",
+    "method": "bm25",
+    "n_queries": 251,
+    "n_chunks": 5180,
+    "ms_per_query": 9.1,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.5777,
+        "low": 0.5179,
+        "high": 0.6335
+      },
+      "recall@5": {
+        "mean": 0.8566,
+        "low": 0.8088,
+        "high": 0.8964
+      },
+      "recall@10": {
+        "mean": 0.9124,
+        "low": 0.8725,
+        "high": 0.9442
+      },
+      "mrr@10": {
+        "mean": 0.7012,
+        "low": 0.6542,
+        "high": 0.7441
+      },
+      "ndcg@10": {
+        "mean": 0.7533,
+        "low": 0.712,
+        "high": 0.7911
+      }
+    }
+  },
+  {
+    "index": "w100",
+    "method": "dense",
+    "n_queries": 251,
+    "n_chunks": 5180,
+    "ms_per_query": 0.5,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.8446,
+        "low": 0.8008,
+        "high": 0.8884
+      },
+      "recall@5": {
+        "mean": 0.9841,
+        "low": 0.9681,
+        "high": 0.996
+      },
+      "recall@10": {
+        "mean": 0.996,
+        "low": 0.988,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.9044,
+        "low": 0.8759,
+        "high": 0.9324
+      },
+      "ndcg@10": {
+        "mean": 0.9273,
+        "low": 0.9048,
+        "high": 0.9488
+      }
+    }
+  },
+  {
+    "index": "w100",
+    "method": "hybrid",
+    "n_queries": 251,
+    "n_chunks": 5180,
+    "ms_per_query": 10.5,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.7371,
+        "low": 0.6813,
+        "high": 0.7888
+      },
+      "recall@5": {
+        "mean": 0.9641,
+        "low": 0.9402,
+        "high": 0.9841
+      },
+      "recall@10": {
+        "mean": 0.988,
+        "low": 0.9721,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.8393,
+        "low": 0.8043,
+        "high": 0.872
+      },
+      "ndcg@10": {
+        "mean": 0.8766,
+        "low": 0.8484,
+        "high": 0.9026
+      }
+    }
+  },
+  {
+    "index": "w200",
+    "method": "bm25",
+    "n_queries": 251,
+    "n_chunks": 2665,
+    "ms_per_query": 5.0,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.6255,
+        "low": 0.5656,
+        "high": 0.6814
+      },
+      "recall@5": {
+        "mean": 0.8805,
+        "low": 0.8406,
+        "high": 0.9203
+      },
+      "recall@10": {
+        "mean": 0.9283,
+        "low": 0.8924,
+        "high": 0.9562
+      },
+      "mrr@10": {
+        "mean": 0.7386,
+        "low": 0.6933,
+        "high": 0.7806
+      },
+      "ndcg@10": {
+        "mean": 0.7854,
+        "low": 0.7455,
+        "high": 0.8213
+      }
+    }
+  },
+  {
+    "index": "w200",
+    "method": "dense",
+    "n_queries": 251,
+    "n_chunks": 2665,
+    "ms_per_query": 0.3,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.8088,
+        "low": 0.757,
+        "high": 0.8606
+      },
+      "recall@5": {
+        "mean": 0.9721,
+        "low": 0.9522,
+        "high": 0.992
+      },
+      "recall@10": {
+        "mean": 0.996,
+        "low": 0.988,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.8823,
+        "low": 0.8492,
+        "high": 0.913
+      },
+      "ndcg@10": {
+        "mean": 0.9106,
+        "low": 0.8854,
+        "high": 0.9342
+      }
+    }
+  },
+  {
+    "index": "w200",
+    "method": "hybrid",
+    "n_queries": 251,
+    "n_chunks": 2665,
+    "ms_per_query": 6.0,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.7729,
+        "low": 0.7211,
+        "high": 0.8247
+      },
+      "recall@5": {
+        "mean": 0.9681,
+        "low": 0.9442,
+        "high": 0.988
+      },
+      "recall@10": {
+        "mean": 0.988,
+        "low": 0.9721,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.8585,
+        "low": 0.8253,
+        "high": 0.8914
+      },
+      "ndcg@10": {
+        "mean": 0.8908,
+        "low": 0.8641,
+        "high": 0.9168
+      }
+    }
+  },
+  {
+    "index": "w200",
+    "method": "hybrid_rerank",
+    "n_queries": 251,
+    "n_chunks": 2665,
+    "ms_per_query": 2399.3,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.8486,
+        "low": 0.8008,
+        "high": 0.8924
+      },
+      "recall@5": {
+        "mean": 0.9761,
+        "low": 0.9562,
+        "high": 0.992
+      },
+      "recall@10": {
+        "mean": 0.996,
+        "low": 0.988,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.9039,
+        "low": 0.8744,
+        "high": 0.9323
+      },
+      "ndcg@10": {
+        "mean": 0.9267,
+        "low": 0.9036,
+        "high": 0.9488
+      }
+    }
+  },
+  {
+    "index": "w400",
+    "method": "bm25",
+    "n_queries": 251,
+    "n_chunks": 1636,
+    "ms_per_query": 4.0,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.6215,
+        "low": 0.5618,
+        "high": 0.6774
+      },
+      "recall@5": {
+        "mean": 0.8805,
+        "low": 0.8367,
+        "high": 0.9203
+      },
+      "recall@10": {
+        "mean": 0.9442,
+        "low": 0.9163,
+        "high": 0.9721
+      },
+      "mrr@10": {
+        "mean": 0.7393,
+        "low": 0.6937,
+        "high": 0.7804
+      },
+      "ndcg@10": {
+        "mean": 0.7895,
+        "low": 0.7502,
+        "high": 0.8242
+      }
+    }
+  },
+  {
+    "index": "w400",
+    "method": "dense",
+    "n_queries": 251,
+    "n_chunks": 1636,
+    "ms_per_query": 0.2,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.8207,
+        "low": 0.7729,
+        "high": 0.8685
+      },
+      "recall@5": {
+        "mean": 0.988,
+        "low": 0.9721,
+        "high": 1.0
+      },
+      "recall@10": {
+        "mean": 0.996,
+        "low": 0.988,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.8907,
+        "low": 0.861,
+        "high": 0.9203
+      },
+      "ndcg@10": {
+        "mean": 0.9172,
+        "low": 0.894,
+        "high": 0.9396
+      }
+    }
+  },
+  {
+    "index": "w400",
+    "method": "hybrid",
+    "n_queries": 251,
+    "n_chunks": 1636,
+    "ms_per_query": 4.4,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.757,
+        "low": 0.7012,
+        "high": 0.8088
+      },
+      "recall@5": {
+        "mean": 0.9681,
+        "low": 0.9442,
+        "high": 0.988
+      },
+      "recall@10": {
+        "mean": 0.9841,
+        "low": 0.9641,
+        "high": 0.996
+      },
+      "mrr@10": {
+        "mean": 0.8504,
+        "low": 0.8161,
+        "high": 0.8831
+      },
+      "ndcg@10": {
+        "mean": 0.8839,
+        "low": 0.8565,
+        "high": 0.9098
+      }
+    }
+  }
+]

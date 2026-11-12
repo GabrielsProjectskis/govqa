@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+.ruff_cache/
+data/raw/
+data/docs.parquet
+data/index/
+data/testset/
+!data/sample/

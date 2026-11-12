@@ -1,0 +1,51 @@
+[project]
+name = "govqa"
+version = "0.1.0"
+description = "Question answering over Dutch government Q&A pages, with a measured retrieval and generation evaluation."
+authors = [{ name = "Gabriel Jukema" }]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "httpx>=0.27",
+    "litellm>=1.50",
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "prometheus-client>=0.21",
+    "pyarrow>=17",
+    "python-dotenv>=1.0",
+    "rank-bm25>=0.2.2",
+    "selectolax>=1.0",
+    "sentence-transformers>=3.0",
+    "streamlit>=1.39",
+    "torch>=2.4",
+    "uvicorn>=0.30",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.7"]
+
+# CPU-only PyTorch on Linux keeps the Docker image small (no CUDA libraries).
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "eval", "app", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]  # line length is handled by ruff format
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

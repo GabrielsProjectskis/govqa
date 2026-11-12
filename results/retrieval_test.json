@@ -1,0 +1,138 @@
+[
+  {
+    "index": "w200",
+    "method": "bm25",
+    "n_queries": 503,
+    "n_chunks": 2665,
+    "ms_per_query": 4.3,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.5984,
+        "low": 0.5547,
+        "high": 0.6421
+      },
+      "recall@5": {
+        "mean": 0.8429,
+        "low": 0.8111,
+        "high": 0.8728
+      },
+      "recall@10": {
+        "mean": 0.9006,
+        "low": 0.8728,
+        "high": 0.9264
+      },
+      "mrr@10": {
+        "mean": 0.7052,
+        "low": 0.6729,
+        "high": 0.7378
+      },
+      "ndcg@10": {
+        "mean": 0.7529,
+        "low": 0.7246,
+        "high": 0.7819
+      }
+    }
+  },
+  {
+    "index": "w200",
+    "method": "dense",
+    "n_queries": 503,
+    "n_chunks": 2665,
+    "ms_per_query": 0.3,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.7813,
+        "low": 0.7435,
+        "high": 0.8151
+      },
+      "recall@5": {
+        "mean": 0.9742,
+        "low": 0.9602,
+        "high": 0.9861
+      },
+      "recall@10": {
+        "mean": 0.998,
+        "low": 0.994,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.8674,
+        "low": 0.8438,
+        "high": 0.8887
+      },
+      "ndcg@10": {
+        "mean": 0.9,
+        "low": 0.8817,
+        "high": 0.9162
+      }
+    }
+  },
+  {
+    "index": "w200",
+    "method": "hybrid",
+    "n_queries": 503,
+    "n_chunks": 2665,
+    "ms_per_query": 5.6,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.7356,
+        "low": 0.6978,
+        "high": 0.7734
+      },
+      "recall@5": {
+        "mean": 0.9443,
+        "low": 0.9225,
+        "high": 0.9642
+      },
+      "recall@10": {
+        "mean": 0.9841,
+        "low": 0.9722,
+        "high": 0.994
+      },
+      "mrr@10": {
+        "mean": 0.8268,
+        "low": 0.8008,
+        "high": 0.8532
+      },
+      "ndcg@10": {
+        "mean": 0.8654,
+        "low": 0.8441,
+        "high": 0.8867
+      }
+    }
+  },
+  {
+    "index": "w200",
+    "method": "hybrid_rerank",
+    "n_queries": 503,
+    "n_chunks": 2665,
+    "ms_per_query": 2304.0,
+    "metrics": {
+      "recall@1": {
+        "mean": 0.8688,
+        "low": 0.837,
+        "high": 0.8966
+      },
+      "recall@5": {
+        "mean": 0.992,
+        "low": 0.9841,
+        "high": 0.998
+      },
+      "recall@10": {
+        "mean": 0.998,
+        "low": 0.994,
+        "high": 1.0
+      },
+      "mrr@10": {
+        "mean": 0.9222,
+        "low": 0.9036,
+        "high": 0.9394
+      },
+      "ndcg@10": {
+        "mean": 0.9414,
+        "low": 0.9271,
+        "high": 0.9544
+      }
+    }
+  }
+]
